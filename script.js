@@ -47,7 +47,7 @@ function moveBall() {
     // get the current grid item
 
     let nthX = (x).toFixed(0);
-    let nthY = (gridLength-y).toFixed(0);
+    let nthY = (gridLength-y+2).toFixed(0);
     const currentItem = document.querySelector(`#i${nthX}j${nthY}`);
     
     if (currentItem) {
@@ -56,7 +56,6 @@ function moveBall() {
           currentItem.classList.remove(`red`);
         }
     }
-    else console.log(currentItem);
     // update the ball's position and velocity
 			x += dx;
 			y += dy;
@@ -64,7 +63,29 @@ function moveBall() {
 			ball.style.bottom = `${y * 50}px`;
 }
 //function to get input from user to create a grid
+const myDiv = document.querySelector(".button");
 
+myDiv.addEventListener("click", () => {
+  const input = prompt("Enter a grid length: (0-100) ");
+  if (input <= 100 && input >=0) {
+    gridLength = (+input).toFixed(0);
+
+    const node = document.querySelector('.reset');
+    
+    const newChild = document.querySelector('.container');
+
+    node.removeChild(newChild);
+
+    const newDiv = document.createElement('div');
+
+    newDiv.classList.add('container');
+
+    node.appendChild(newDiv);
+
+    makeGrid(gridLength);
+  }
+  else alert(`Try again from 0 - 100`);
+});
 
 
 //function to get key press from 

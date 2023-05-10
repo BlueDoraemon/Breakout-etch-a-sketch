@@ -1,16 +1,19 @@
 .box{
     height:50px;
     width:50px;
-    background-color: blue;
+    background-color: #044040;
     display: flex;
     /* border: 2px solid red; */
     justify-content: center;
     
 }
-
+.reset{
+    display: flex;
+}
 
 .container{
     display: flex;
+    margin: 25px;
 }
 
 body{
@@ -33,6 +36,11 @@ body{
     transform: translateX(-15px);
 }
 .red {
-    background-color: red;
+    background-color: #591C21;
 
+}
+.button {
+    background-color: #044040;
+    border: 2px solid #D92525;
+    color: #F2F2F2;
 }
