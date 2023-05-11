@@ -7,15 +7,28 @@
     justify-content: center;
     
 }
+.header{
+    display: flex;
+    padding:20px;
+    font-family: Garet ,Arial, Helvetica, sans-serif;
+    background-color: #F2F2F2;
+    border-radius: 10px 10px 0 0;
+}
 .reset{
     display: flex;
 }
 
 .container{
     display: flex;
-    margin: 25px;
+    margin-left:25px;
+    
 }
-
+.top {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    margin-left: 25px;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -23,6 +36,8 @@ body{
     align-items: start;
     margin: 0;
     padding: 0;
+    top: 0;
+    right: 0;
     background-color: black;
 }
 .ball {
@@ -30,16 +45,23 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 25px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 50%;
-    transform: translateX(-15px);
+    transform: translateX(-25px);
 }
 .red {
     background-color: #591C21;
 
 }
 .button {
+    display: flex;
+    padding:20px;
+    font-family: Garet ,Arial, Helvetica, sans-serif;
+    background-color: #F2F2F2;
+    border-radius: 10px 10px 0 0;
+}
+.hover {
     background-color: #044040;
     border: 2px solid #D92525;
     color: #F2F2F2;
