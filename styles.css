@@ -28,6 +28,7 @@
     justify-content: space-between;
     gap: 120px;
     margin-left: 25px;
+    margin-top: 12px;
 }
 body{
     display: flex;
@@ -63,6 +64,6 @@ body{
 }
 .hover {
     background-color: #044040;
-    border: 2px solid #D92525;
+    box-shadow:0px 0px 0px 2px #F2F2F2 inset;
     color: #F2F2F2;
 }

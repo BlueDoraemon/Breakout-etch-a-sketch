@@ -138,3 +138,15 @@ gitlink.addEventListener("mouseout", (e) =>{
     gitlink.classList.remove('hover');
     document.body.style.cursor = 'default';
 });
+//Do the same for reset button
+const resetHover = document.querySelector('.button');
+
+resetHover.addEventListener("mouseover", (e) =>{
+    resetHover.classList.add('hover');
+    document.body.style.cursor = 'pointer';
+});
+
+resetHover.addEventListener("mouseout", (e) =>{
+    resetHover.classList.remove('hover');
+    document.body.style.cursor = 'default';
+});
